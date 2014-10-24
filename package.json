@@ -17,7 +17,8 @@
   "dependencies": {
     "mkdirp": "^0.5",
     "userid": "^0.1",
-    "wantsit": "^1.0"
+    "wantsit": "^1.0",
+    "timeoutify": "^0.0"
   },
   "devDependencies": {
     "coveralls": "^2.8",
