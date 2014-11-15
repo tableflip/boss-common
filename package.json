@@ -1,7 +1,7 @@
 {
   "name": "boss-common",
   "description": "Common components for boss",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "https://github.com/tableflip/boss-common",
   "repository": {
     "type": "git",
