@@ -15,8 +15,6 @@
     "coveralls": "cat ./coverage/lcov.info | coveralls"
   },
   "dependencies": {
-    "mkdirp": "^0.5",
-    "userid": "^0.1",
     "wantsit": "^1.0",
     "timeoutify": "^0.0"
   },
@@ -27,6 +25,9 @@
     "proxyquire": "^1.0",
     "chai": "^1.0",
     "sinon": "^1.8",
-    "testsuite": "^1.0"
+    "testsuite": "^1.0",
+    "uuid": "^2.0",
+    "mkdirp": "^0.5",
+    "userid": "^0.1"
   }
 }
