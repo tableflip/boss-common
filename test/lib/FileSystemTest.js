@@ -18,6 +18,7 @@ describe('FileSystem', function() {
         logdir: temp + '/log',
         confdir: temp + '/conf',
         rundir: temp + '/run',
+        appdir: temp + '/apps',
         user: userid.username(process.getuid()),
         group: userid.groupname(process.getgid())
       }
@@ -75,6 +76,18 @@ describe('FileSystem', function() {
     fileSystem.findOrCreateConfigDirectory(function(error, processDir) {
       expect(error).to.not.exist
       expect(processDir).to.contain(fileSystem._config.boss.confdir)
+      expect(fs.existsSync(processDir)).to.be.true
+
+      done()
+    })
+  })
+
+  it('should create app directory', function(done) {
+    expect(fs.existsSync(fileSystem._config.boss.appdir)).to.be.false
+
+    fileSystem.findOrCreateAppDirectory(function(error, processDir) {
+      expect(error).to.not.exist
+      expect(processDir).to.contain(fileSystem._config.boss.appdir)
       expect(fs.existsSync(processDir)).to.be.true
 
       done()
