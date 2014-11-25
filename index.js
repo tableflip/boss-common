@@ -1,5 +1,5 @@
 module.exports = {
   FileSystem: require('./lib/FileSystem'),
-  ProcessFactory: require('./lib/ProcessFactory'),
+  Process: require('./lib/Process'),
   Crypto: require('./lib/Crypto')
 }
