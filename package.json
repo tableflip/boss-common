@@ -28,6 +28,6 @@
     "testsuite": "^1.0",
     "uuid": "^2.0",
     "mkdirp": "^0.5",
-    "userid": "^0.1"
+    "posix": "^1.0"
   }
 }

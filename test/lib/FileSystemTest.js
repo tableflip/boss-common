@@ -4,7 +4,7 @@ var expect = require('chai').expect,
   os = require('os'),
   uuid = require('uuid'),
   fs = require('fs'),
-  userid = require('userid'),
+  posix = require('posix'),
   mkdirp = require('mkdirp')
 
 describe('FileSystem', function() {
@@ -19,8 +19,8 @@ describe('FileSystem', function() {
         confdir: temp + '/conf',
         rundir: temp + '/run',
         appdir: temp + '/apps',
-        user: userid.username(process.getuid()),
-        group: userid.groupname(process.getgid())
+        user: posix.getpwnam(process.getuid()).name,
+        group: posix.getgrnam(process.getgid()).name
       }
     }
     fileSystem._logger = {
@@ -29,7 +29,7 @@ describe('FileSystem', function() {
       error: function() {},
       debug: function() {}
     }
-    fileSystem._userid = userid
+    fileSystem._posix = posix
     fileSystem._fs = fs
     fileSystem._mkdirp = mkdirp
   })

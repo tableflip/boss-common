@@ -1,11 +1,6 @@
 var expect = require('chai').expect,
   sinon = require('sinon'),
-  Process = require('../../lib/Process'),
-  os = require('os'),
-  uuid = require('uuid'),
-  fs = require('fs'),
-  userid = require('userid'),
-  mkdirp = require('mkdirp')
+  Process = require('../../lib/Process')
 
 describe('FileSystem', function() {
   var proc, socket
