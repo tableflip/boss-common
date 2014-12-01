@@ -2,7 +2,7 @@ var expect = require('chai').expect,
   sinon = require('sinon'),
   Process = require('../../lib/Process')
 
-describe('FileSystem', function() {
+describe('Process', function() {
   var proc, socket
 
   beforeEach(function() {
