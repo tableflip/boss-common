@@ -30,5 +30,17 @@
     "sinon": "^1.8",
     "testsuite": "^1.0",
     "uuid": "^2.0"
+  },
+  "jshintConfig": {
+    "asi": true,
+    "browser": true,
+    "curly": false,
+    "expr": true,
+    "indent": 2,
+    "loopfunc": true,
+    "node": true,
+    "trailing": true,
+    "undef": true,
+    "white": true
   }
 }
